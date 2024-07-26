@@ -1,0 +1,434 @@
+[
+    {
+        "id_cliente": 1,
+        "nombre": "Ignacio",
+        "apellido": "de Loyola",
+        "documento": "14245678",
+        "direccion": "Calle Santisima trinidad",
+        "telefono": "123-4567",
+        "correo_electronico": "juan.alfo@example.com"
+    },
+    {
+        "id_cliente": 2,
+        "nombre": "Benito",
+        "apellido": "Juarez",
+        "documento": "14245678",
+        "direccion": "Calle Mexico",
+        "telefono": "123-4567",
+        "correo_electronico": "beniijua@example.com"
+    },
+    {
+        "id_cliente": 4,
+        "nombre": "Jacinto",
+        "apellido": "Olivares",
+        "documento": "23455667",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 5,
+        "nombre": "Jacinto",
+        "apellido": "Olivares",
+        "documento": "23455667",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 6,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 7,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 8,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 9,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 10,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 11,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 12,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 13,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 14,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 15,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 16,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 17,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 18,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 19,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 20,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 21,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 22,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 23,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 24,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 25,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 26,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 27,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 28,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 29,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 30,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 31,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 32,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 33,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 34,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 35,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 36,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 37,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 38,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 39,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 40,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 41,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 42,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 43,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 44,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 45,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 46,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 47,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 48,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 49,
+        "nombre": "Luis",
+        "apellido": "Mani",
+        "documento": "234556d3232",
+        "direccion": "Calle Franqueza",
+        "telefono": "123-4337",
+        "correo_electronico": "jaoliva@example.com"
+    }
+]
