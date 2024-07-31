@@ -37,6 +37,10 @@ class Transacciones:
     # update 
     def editar_transaccion(self,id_transaccion,llave,valor):
         lista_de_transacciones = self.get_transacciones()
+        criterios_int = ['id_transaccion','id_vehiculo','id_cliente','monto']
+        for criterio in criterios_int:
+            if llave == criterio:
+                valor = int(valor)
         for transaccion in lista_de_transacciones:
             if transaccion['id_transaccion'] == id_transaccion:
                 transaccion[llave] = valor
@@ -54,26 +58,12 @@ class Transacciones:
     def buscar_transaccion(self,criterio,buscado):
         lista_de_transacciones = self.get_transacciones()
         coincidencias = list()
+        criterios_int = ['id_transaccion','id_vehiculo','id_cliente','monto']
         for transaccion in lista_de_transacciones:
+            if criterio in criterios_int:
+                buscado = int(buscado)
             if transaccion[criterio] == buscado:
                 coincidencias.append(transaccion)
         return coincidencias
     
     
-# trasacciones = Transacciones()
-# trasacciones.mostrar_transacciones()
-# nueva_transaccion = {
-#      "id_transaccion": 1,
-#       "id_vehiculo": 6,
-#       "id_cliente": 7,
-#       "tipo_transaccion": "Venta",
-#       "fecha": "2024-04-09",
-#       "monto": 2100000,
-#       "observaciones": "Venta realizada con éxito."
-# }
-# #trasacciones.agregar_transaccion(nueva_transaccion)
-# #trasacciones.eliminar_transaccion(3)
-# #trasacciones.editar_transaccion(2,'monto',800000)
-# print("TRANSACCION ...")
-##print(trasacciones.buscar_transaccion('tipo_transaccion','Compra'))
-#trasacciones.mostrar_transacciones()

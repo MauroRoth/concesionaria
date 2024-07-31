@@ -17,7 +17,7 @@
         "marca": "Ford",
         "modelo": "Focus",
         "tipo": "Hatchback",
-        "a\u00f1o": "2016",
+        "a\u00f1o": 2016,
         "kilometraje": 74950,
         "precio_compra": 14000,
         "precio_venta": 17000,
@@ -29,10 +29,10 @@
         "marca": "Renault",
         "modelo": "Clio",
         "tipo": "Sedan",
-        "a\u00f1o": "2007",
-        "kilometraje": "200000",
-        "precio_compra": "3200000",
-        "precio_venta": "3900000",
+        "a\u00f1o": 2007,
+        "kilometraje": 200000,
+        "precio_compra": 3200000,
+        "precio_venta": 3900000,
         "estado": "Disponible"
     },
     {
@@ -41,10 +41,10 @@
         "marca": "Renault",
         "modelo": "Sandero",
         "tipo": "Sedan",
-        "a\u00f1o": "2014",
-        "kilometraje": "116000",
-        "precio_compra": "8000",
-        "precio_venta": "9000",
+        "a\u00f1o": 2014,
+        "kilometraje": 116000,
+        "precio_compra": 8000,
+        "precio_venta": 9000,
         "estado": "Reservado"
     },
     {
@@ -53,10 +53,10 @@
         "marca": "Toyota",
         "modelo": "",
         "tipo": "Camioneta",
-        "a\u00f1o": "",
-        "kilometraje": "",
-        "precio_compra": "",
-        "precio_venta": "",
+        "a\u00f1o": 2022,
+        "kilometraje": 10000,
+        "precio_compra": 150000,
+        "precio_venta": 20000,
         "estado": ""
     },
     {
@@ -65,10 +65,10 @@
         "marca": "Ford",
         "modelo": "Focus",
         "tipo": "Sedan",
-        "a\u00f1o": "2018",
-        "kilometraje": "1250000",
-        "precio_compra": "12000",
-        "precio_venta": "12500",
+        "a\u00f1o": 2018,
+        "kilometraje": 1250000,
+        "precio_compra": 12000,
+        "precio_venta": 12500,
         "estado": "Disponible"
     },
     {
@@ -77,10 +77,10 @@
         "marca": "Renault",
         "modelo": "Logan",
         "tipo": "Sedan",
-        "a\u00f1o": "2015",
-        "kilometraje": "180000",
-        "precio_compra": "5000",
-        "precio_venta": "6000",
+        "a\u00f1o": 2015,
+        "kilometraje": 180000,
+        "precio_compra": 5000,
+        "precio_venta": 6000,
         "estado": "Reservado"
     },
     {
@@ -89,10 +89,10 @@
         "marca": "Ford",
         "modelo": "Fiesta",
         "tipo": "Sedan",
-        "a\u00f1o": "2005",
-        "kilometraje": "260000",
-        "precio_compra": "4000",
-        "precio_venta": "4500",
+        "a\u00f1o": 2005,
+        "kilometraje": 260000,
+        "precio_compra": 4000,
+        "precio_venta": 4500,
         "estado": "Disponible"
     },
     {
@@ -101,10 +101,10 @@
         "marca": "Toyota",
         "modelo": "Etios",
         "tipo": "Sedan",
-        "a\u00f1o": "2019",
-        "kilometraje": "5000",
-        "precio_compra": "15000",
-        "precio_venta": "18000",
+        "a\u00f1o": 2019,
+        "kilometraje": 5000,
+        "precio_compra": 15000,
+        "precio_venta": 18000,
         "estado": "Disponible"
     },
     {
@@ -113,10 +113,22 @@
         "marca": "Toyota",
         "modelo": "Yaris",
         "tipo": "Sedan",
-        "a\u00f1o": "2018",
-        "kilometraje": "85000",
-        "precio_compra": "64000",
-        "precio_venta": "65000",
+        "a\u00f1o": 2018,
+        "kilometraje": 85000,
+        "precio_compra": 60000,
+        "precio_venta": 65000,
+        "estado": "Disponible"
+    },
+    {
+        "id_vehiculo": 14,
+        "patente": "KIO258",
+        "marca": "Ford",
+        "modelo": "Ranger",
+        "tipo": "Camioneta",
+        "a\u00f1o": 2007,
+        "kilometraje": 256000,
+        "precio_compra": 4000,
+        "precio_venta": 5000,
         "estado": "Disponible"
     }
 ]

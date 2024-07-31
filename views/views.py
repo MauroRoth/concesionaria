@@ -33,12 +33,11 @@ class HomeView:
             print(50*"-")
             print("Menú Transacciones")
             print(50*"-")
-            print("\t\t11. Registrar Compra")
-            print("\t\t12. Registrar Venta")
-            print("\t\t13. Imprimir Transacciones")
-            print("\t\t14. Editar Transaccion")
-            print("\t\t15. Eliminar Transaccion")
-            print("\t\t16. Buscar en Trasacciones")
+            print("\t\t11. Registrar Transacción")
+            print("\t\t12. Imprimir Transacciones")
+            print("\t\t13. Editar Transaccion")
+            print("\t\t14. Eliminar Transaccion")
+            print("\t\t15. Buscar en Trasacciones")
             print(50*"-")
             print("Presione 0 para salir...")
             print(50*"-")
@@ -56,12 +55,11 @@ class HomeView:
             elif opcion == '8': controller.editar_cliente()
             elif opcion == '9': controller.eliminar_cliente()
             elif opcion == '10': controller.buscar_en_clientes()
-            elif opcion == '11': controller.registrar_compra()
-            elif opcion == '12': controller.registrar_venta()
-            elif opcion == '13': controller.imprimir_transacciones()
-            elif opcion == '14': controller.editar_transaccion()
-            elif opcion == '15': controller.eliminar_transaccion()
-            elif opcion == '16': controller.buscar_en_transacciones()
+            elif opcion == '11': controller.registrar_transaccion()
+            elif opcion == '12': controller.imprimir_transacciones()
+            elif opcion == '13': controller.editar_transaccion()
+            elif opcion == '14': controller.eliminar_transaccion()
+            elif opcion == '15': controller.buscar_en_transacciones()
             else: break
 
             input('\nPresione una tecla para continuar... ')
@@ -74,10 +72,10 @@ class HomeView:
         marca = input('Ingrese Marca: ') 
         modelo = input('Ingrese Modelo: ')
         tipo = input('Ingrese Tipo: ')
-        anio = input('Ingrese Año: ')
-        kilometraje = input('Ingrese Kilometraje: ')
-        precio_compra = input('Ingrese Precio de Compra: ')
-        precio_venta = input('Ingrese Precio de Venta: ')
+        anio = int(input('Ingrese Año: '))
+        kilometraje = int(input('Ingrese Kilometraje: '))
+        precio_compra = int(input('Ingrese Precio de Compra: '))
+        precio_venta = int(input('Ingrese Precio de Venta: '))
         estado = input('Ingrese Estado: ')
         return [id_vehiculo,patente,marca,modelo,tipo,anio,kilometraje,precio_compra,precio_venta,estado]
     
@@ -92,6 +90,18 @@ class HomeView:
         telefono = input('Ingrese Teléfono: ')
         correo_electronico = input('Ingrese Correo Electrónico: ')
         return [id_cliente,nombre,apellido,documento,direccion,telefono,correo_electronico]
+    
+    def agregar_transaccion(self):
+        print("\nAgregar Transacción")
+        print(50*"-")
+        id_transaccion = None,
+        id_vehiculo = int(input('Ingrese id del Vehículo: '))
+        id_cliente = int(input('Ingrese id del Cliente: '))
+        tipo_transaccion = input('Ingrese Tipo de Transacción: ')
+        fecha = input('Ingrese Fecha: ') 
+        monto = int(input('Ingrese Monto: '))
+        observaciones = input('Ingrese Observaciones: ')
+        return [id_transaccion,id_vehiculo,id_cliente,tipo_transaccion,fecha,monto,observaciones]
 
     def mostrar_agregado(self,nuevo_agregado,categoria):
         print(f"\n\n\t{categoria.capitalize()} Agragado")
@@ -124,22 +134,17 @@ class HomeView:
                 print(f"{valor:^12}", end='')
             print()
         if proceso == 'editar':
-            id_vehiculo = int(input(f'Ingrese el id del {categoria} a Editar: '))
+            id_categoria = int(input(f'Ingrese el id del {categoria} a Editar: '))
             atributo_a_modificar = input('Ingrese el atributo a modificar: ')
-            return id_vehiculo,atributo_a_modificar
+            return id_categoria,atributo_a_modificar
         if proceso == 'eliminar':
-            id_vehiculo = int(input('Ingrese el id del vehículo a Eliminar: '))
-            return id_vehiculo
+            id_categoria = int(input(f'Ingrese el id del {categoria} a Eliminar: '))
+            return id_categoria
 
-    
     def modificar_atributo(self, atributo_a_modificar):
         print(f"Modifique {atributo_a_modificar}")
         atributo_modificado = input('Ingrese modificación: ')
         return atributo_modificado
-
-
-    def registrar_compra_view(self):
-        pass
     
     def buscar(self,lista_de_criterios,singular,plural):
         print(f"\nBUSQUEDA POR CRITERIOS EN {plural.upper()}\n")

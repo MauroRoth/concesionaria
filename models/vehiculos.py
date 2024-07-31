@@ -36,6 +36,10 @@ class Vehiculos:
     # update 
     def editar_vehiculo(self,id_vehiculo,llave,valor):
         lista_de_vehiculos = self.get_vehiculos()
+        criterios_int = ['id_vehiculo','año','kilometraje','precio_compra','precio_venta']
+        for criterio in criterios_int:
+            if llave == criterio:
+                valor = int(valor)
         for vehiculo in lista_de_vehiculos:
             if vehiculo['id_vehiculo'] == id_vehiculo:
                 vehiculo[llave] = valor
@@ -61,22 +65,3 @@ class Vehiculos:
                 coincidencias.append(vehiculo)
         return coincidencias
 
-
-# vehiculo = Vehiculos()
-# nuevo_vehiculo = {
-#     "id_vehiculo": 1,
-#     "patente": "JTC163",
-#     "marca": "Toyota",
-#     "modelo": "Etios",
-#     "tipo": "Sedán",
-#     "año": 2018,
-#     "kilometraje": 25000,
-#     "precio_compra": 7000000,
-#     "precio_venta": 9000000,
-#     "estado": "Disponible"
-#     }
-#vehiculo.agregar_vehiculo(nuevo_vehiculo)
-#vehiculo.editar_vehiculo(2,'kilometraje', 74950)
-# vehiculo.eliminar_vehiculo(3)
-# vehiculo.mostrar_vehiculos()
-# print(vehiculo.buscar_vehiculo('marca','Toyota'))

@@ -123,49 +123,45 @@ class Controller:
         self.vista.mostrar(coincidencias,singular,plural)
 
     # opcion 11
-    def registrar_compra(self):
-        print("REGISTRO DE UNA COMPRA")
-        # id_transaccion = 0,
-        # id_vehiculo_buscado = input('ingrese id_vehiculo que busca: ')
-        # coincidencia = self.vehiculos.buscar_vehiculo('id_vehiculo',id_vehiculo_buscado)
-        # print(coincidencia)
-        # id_cliente_buscado = input('ingrese id_cliente que busca: ')
-        # id_cliente = self.clientes.buscar_cliente('id_cliente', id_cliente_buscado)
-        # tipo_transaccion =  "Compra",
-        # fecha = "2024-01-15",
-        # monto = 15000,
-        # observaciones = "Compra realizada con éxito."
-        # nueva_transaccion = {
-        #     "id_transaccion": id_transaccion,
-        #     "id_vehiculo": id_vehiculo,
-        #     "id_cliente": id_cliente,
-        #     "tipo_transaccion": tipo_transaccion,
-        #     "fecha": fecha,
-        #     "monto": monto,
-        #     "observaciones": observaciones
-        # }
-        #self.transacciones.agregar_transaccion(nueva_transaccion)
+    def registrar_transaccion(self):
+        atributos_transaccion = self.vista.agregar_transaccion()
+        nueva_transaccion = {
+                "id_transaccion": atributos_transaccion[0],
+                "id_vehiculo": atributos_transaccion[1],
+                "id_cliente": atributos_transaccion[2],
+                "tipo_transaccion": atributos_transaccion[3],
+                "fecha": atributos_transaccion[4],
+                "monto": atributos_transaccion[5],
+                "observaciones": atributos_transaccion[6],
+        }
+        self.transacciones.agregar_transaccion(nueva_transaccion)
+        self.vista.mostrar_agregado(nueva_transaccion,'Transacción')
 
-    # opcion 12 
-    def registrar_venta(self):
-        print("registro una venta")
-    
-    # opcion 13
+    # opcion 12
     def imprimir_transacciones(self):
         singular = 'transaccion'
         plural = 'transacciones'
         lista_de_transacciones = self.transacciones.mostrar_transacciones()
         self.vista.mostrar(lista_de_transacciones,singular,plural)
     
+    # opcion 13
+    def editar_transaccion(self): 
+        lista_de_transacciones = self.transacciones.mostrar_transacciones()
+        id_transaccion, atributo_a_modificar = self.vista.mostrar_editar_eliminar(lista_de_transacciones,'editar','Transacción')
+        atributo_modificado = self.vista.modificar_atributo(atributo_a_modificar)
+        self.transacciones.editar_transaccion(id_transaccion,atributo_a_modificar,atributo_modificado)
+        lista_de_transacciones = self.transacciones.mostrar_transacciones()
+        self.vista.mostrar_editar_eliminar(lista_de_transacciones,'mostrar','Transacciones')
+    
     # opcion 14
-    def editar_transaccion(self):
-        print("edito una transaccion")
+    def eliminar_transaccion(self):
+        lista_de_transacciones = self.transacciones.mostrar_transacciones()
+        id_transaccion = self.vista.mostrar_editar_eliminar(lista_de_transacciones,'eliminar','Transacciones')
+        self.transacciones.eliminar_transaccion(id_transaccion)
+        lista_de_transacciones = self.transacciones.mostrar_transacciones()
+        self.vista.mostrar_editar_eliminar(lista_de_transacciones,'mostrar','Transacciones')
     
     # opcion 15
-    def eliminar_transaccion(self):
-        print("elimino una transaccion")
-    
-    # opcion 16
     def buscar_en_transacciones(self):
         lista_de_criterios = ["id_transaccion","id_vehiculo","id_cliente","tipo_transaccion","fecha","monto","observaciones"]
         singular = 'transaccion'

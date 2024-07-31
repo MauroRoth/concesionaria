@@ -54,7 +54,10 @@ class Clientes:
     def buscar_cliente(self,criterio,buscado):
         lista_de_clientes = self.get_clientes()
         coincidencias = list()
+        criterios_int = ['id_cliente']
         for cliente in lista_de_clientes:
+            if criterio in criterios_int:
+                buscado = int(buscado)
             if cliente[criterio] == buscado:
                 coincidencias.append(cliente)
         return coincidencias
