@@ -324,15 +324,6 @@
         "correo_electronico": "jaoliva@example.com"
     },
     {
-        "id_cliente": 38,
-        "nombre": "Luis",
-        "apellido": "Mani",
-        "documento": "234556d3232",
-        "direccion": "Calle Franqueza",
-        "telefono": "123-4337",
-        "correo_electronico": "jaoliva@example.com"
-    },
-    {
         "id_cliente": 39,
         "nombre": "Luis",
         "apellido": "Mani",
@@ -373,7 +364,7 @@
         "nombre": "Luis",
         "apellido": "Mani",
         "documento": "234556d3232",
-        "direccion": "Calle Franqueza",
+        "direccion": "San Mart\u00edn",
         "telefono": "123-4337",
         "correo_electronico": "jaoliva@example.com"
     },
@@ -389,23 +380,15 @@
     {
         "id_cliente": 45,
         "nombre": "Luis",
-        "apellido": "Mani",
+        "apellido": "Caceres",
         "documento": "234556d3232",
         "direccion": "Calle Franqueza",
         "telefono": "123-4337",
-        "correo_electronico": "jaoliva@example.com"
+        "correo_electronico": "jaoliva@example.com",
+        "45": ""
     },
     {
         "id_cliente": 46,
-        "nombre": "Luis",
-        "apellido": "Mani",
-        "documento": "234556d3232",
-        "direccion": "Calle Franqueza",
-        "telefono": "123-4337",
-        "correo_electronico": "jaoliva@example.com"
-    },
-    {
-        "id_cliente": 47,
         "nombre": "Luis",
         "apellido": "Mani",
         "documento": "234556d3232",
@@ -430,5 +413,14 @@
         "direccion": "Calle Franqueza",
         "telefono": "123-4337",
         "correo_electronico": "jaoliva@example.com"
+    },
+    {
+        "id_cliente": 50,
+        "nombre": "Diego",
+        "apellido": "Cordoba",
+        "documento": "25666333",
+        "direccion": "htdsdf 966",
+        "telefono": "36445555",
+        "correo_electronico": "@gmai"
     }
 ]

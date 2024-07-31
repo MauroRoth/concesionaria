@@ -13,32 +13,32 @@ class HomeView:
     def menu(self, controller):
         while True:
             self.clearConsole()
-            print("\nMENU CONCECIONARIA")
+            print("\nMENÚ CONCESIONARIA")
             print(50*"-")
-            print("Menu Vehiculos")
+            print("Menú Vehiculos")
             print(50*"-")
-            print("\t\t1. Agregar Vehiculo DOING")
-            print("\t\t2. Mostrar Vehiculos DONE")
-            print("\t\t3. Editar Vehiculo TODO")
-            print("\t\t4. Eliminar Vehiculo TODO")
-            print("\t\t5. Buscar en Vehiculos (FALTA VALIDACIONES)")
+            print("\t\t1. Agregar Vehiculo")
+            print("\t\t2. Mostrar Vehiculos")
+            print("\t\t3. Editar Vehiculo")
+            print("\t\t4. Eliminar Vehiculo")
+            print("\t\t5. Buscar en Vehiculos")
             print(50*"-")
-            print("Menu Clientes")
+            print("Menú Clientes")
             print(50*"-")
-            print("\t\t6. Agregar Cliente TODO")
-            print("\t\t7. Mostrar Clientes DONE")
-            print("\t\t8. Editar Cliente TODO")
-            print("\t\t9. Eliminar Cliente TODO")
-            print("\t\t10. Buscar en Clientes (FALTA VALIDACIONES)")
+            print("\t\t6. Agregar Cliente")
+            print("\t\t7. Mostrar Clientes")
+            print("\t\t8. Editar Cliente")
+            print("\t\t9. Eliminar Cliente")
+            print("\t\t10. Buscar en Clientes")
             print(50*"-")
-            print("Menu Transacciones")
+            print("Menú Transacciones")
             print(50*"-")
-            print("\t\t11. Registrar Compra TODO")
-            print("\t\t12. Registrar Venta TODO")
-            print("\t\t13. Imprimir Transacciones DONE")
-            print("\t\t14. Editar Transaccion TODO")
-            print("\t\t15. Eliminar Transaccion TODO")
-            print("\t\t16. Buscar en Trasacciones (FALTA VALIDACIONES)")
+            print("\t\t11. Registrar Compra")
+            print("\t\t12. Registrar Venta")
+            print("\t\t13. Imprimir Transacciones")
+            print("\t\t14. Editar Transaccion")
+            print("\t\t15. Eliminar Transaccion")
+            print("\t\t16. Buscar en Trasacciones")
             print(50*"-")
             print("Presione 0 para salir...")
             print(50*"-")
@@ -63,11 +63,13 @@ class HomeView:
             elif opcion == '15': controller.eliminar_transaccion()
             elif opcion == '16': controller.buscar_en_transacciones()
             else: break
-        
+
             input('\nPresione una tecla para continuar... ')
     
     def agregar_vehiculo(self):
-        id_vehiculo = 1,
+        print("\nAgregar Vehículo")
+        print(50*"-")
+        id_vehiculo = None,
         patente = input('Ingrese Patente: ')
         marca = input('Ingrese Marca: ') 
         modelo = input('Ingrese Modelo: ')
@@ -79,6 +81,24 @@ class HomeView:
         estado = input('Ingrese Estado: ')
         return [id_vehiculo,patente,marca,modelo,tipo,anio,kilometraje,precio_compra,precio_venta,estado]
     
+    def agregar_cliente(self):
+        print("\nAgregar Cliente")
+        print(50*"-")
+        id_cliente = None,
+        nombre = input('Ingrese Nombre: ')
+        apellido = input('Ingrese Apellido: ') 
+        documento = input('Ingrese Documento: ')
+        direccion = input('Ingrese Dirección: ')
+        telefono = input('Ingrese Teléfono: ')
+        correo_electronico = input('Ingrese Correo Electrónico: ')
+        return [id_cliente,nombre,apellido,documento,direccion,telefono,correo_electronico]
+
+    def mostrar_agregado(self,nuevo_agregado,categoria):
+        print(f"\n\n\t{categoria.capitalize()} Agragado")
+        print(50*"-")
+        for clave, valor in nuevo_agregado.items():
+            print(f"\t{clave}: {valor}")
+
     def mostrar(self,lista,singular,plural):
         print(f"\nLISTA DE {plural.upper()}\n")
         i = 0
@@ -92,7 +112,32 @@ class HomeView:
         i+=1
         print(f"Total de {plural}: {len(lista)}")
     
+    def mostrar_editar_eliminar(self,lista,proceso,categoria):
+        for elemento in lista:
+            claves = list(elemento.keys())[0:6]
+            valores = list(elemento.values())[0:6]
+            if elemento == lista[0]:
+                for clave in claves:
+                    print(f"{clave:^12}", end='')
+                print('\n')
+            for valor in valores:
+                print(f"{valor:^12}", end='')
+            print()
+        if proceso == 'editar':
+            id_vehiculo = int(input(f'Ingrese el id del {categoria} a Editar: '))
+            atributo_a_modificar = input('Ingrese el atributo a modificar: ')
+            return id_vehiculo,atributo_a_modificar
+        if proceso == 'eliminar':
+            id_vehiculo = int(input('Ingrese el id del vehículo a Eliminar: '))
+            return id_vehiculo
+
     
+    def modificar_atributo(self, atributo_a_modificar):
+        print(f"Modifique {atributo_a_modificar}")
+        atributo_modificado = input('Ingrese modificación: ')
+        return atributo_modificado
+
+
     def registrar_compra_view(self):
         pass
     

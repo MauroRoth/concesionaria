@@ -53,7 +53,10 @@ class Vehiculos:
     def buscar_vehiculo(self,criterio,buscado):
         lista_de_vehiculos = self.get_vehiculos()
         coincidencias = list()
+        criterios_int = ['id_vehiculo','año','kilometraje','precio_compra','precio_venta']
         for vehiculo in lista_de_vehiculos:
+            if criterio in criterios_int:
+                buscado = int(buscado)
             if vehiculo[criterio] == buscado:
                 coincidencias.append(vehiculo)
         return coincidencias

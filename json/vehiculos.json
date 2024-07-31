@@ -17,7 +17,7 @@
         "marca": "Ford",
         "modelo": "Focus",
         "tipo": "Hatchback",
-        "a\u00f1o": 2017,
+        "a\u00f1o": "2016",
         "kilometraje": 74950,
         "precio_compra": 14000,
         "precio_venta": 17000,
@@ -36,30 +36,6 @@
         "estado": "Disponible"
     },
     {
-        "id_vehiculo": 4,
-        "patente": "JDK600",
-        "marca": "Ford",
-        "modelo": "Focus",
-        "tipo": "Sedan",
-        "a\u00f1o": "2017",
-        "kilometraje": "80000",
-        "precio_compra": "8000000",
-        "precio_venta": "8500000",
-        "estado": "Disponible"
-    },
-    {
-        "id_vehiculo": 5,
-        "patente": "WWW767",
-        "marca": "Toyota",
-        "modelo": "Yaris",
-        "tipo": "Sedan",
-        "a\u00f1o": "2015",
-        "kilometraje": "6777",
-        "precio_compra": "10000000",
-        "precio_venta": "11000000",
-        "estado": "Reservado"
-    },
-    {
         "id_vehiculo": 6,
         "patente": "QWE456",
         "marca": "Renault",
@@ -73,14 +49,74 @@
     },
     {
         "id_vehiculo": 7,
-        "patente": "",
-        "marca": "",
+        "patente": "FFR588",
+        "marca": "Toyota",
         "modelo": "",
-        "tipo": "",
+        "tipo": "Camioneta",
         "a\u00f1o": "",
         "kilometraje": "",
         "precio_compra": "",
         "precio_venta": "",
         "estado": ""
+    },
+    {
+        "id_vehiculo": 8,
+        "patente": "GQP825",
+        "marca": "Ford",
+        "modelo": "Focus",
+        "tipo": "Sedan",
+        "a\u00f1o": "2018",
+        "kilometraje": "1250000",
+        "precio_compra": "12000",
+        "precio_venta": "12500",
+        "estado": "Disponible"
+    },
+    {
+        "id_vehiculo": 9,
+        "patente": "TRE954",
+        "marca": "Renault",
+        "modelo": "Logan",
+        "tipo": "Sedan",
+        "a\u00f1o": "2015",
+        "kilometraje": "180000",
+        "precio_compra": "5000",
+        "precio_venta": "6000",
+        "estado": "Reservado"
+    },
+    {
+        "id_vehiculo": 10,
+        "patente": "ORT234",
+        "marca": "Ford",
+        "modelo": "Fiesta",
+        "tipo": "Sedan",
+        "a\u00f1o": "2005",
+        "kilometraje": "260000",
+        "precio_compra": "4000",
+        "precio_venta": "4500",
+        "estado": "Disponible"
+    },
+    {
+        "id_vehiculo": 12,
+        "patente": "AFR258",
+        "marca": "Toyota",
+        "modelo": "Etios",
+        "tipo": "Sedan",
+        "a\u00f1o": "2019",
+        "kilometraje": "5000",
+        "precio_compra": "15000",
+        "precio_venta": "18000",
+        "estado": "Disponible"
+    },
+    {
+        "id_vehiculo": 13,
+        "patente": "ARR235",
+        "marca": "Toyota",
+        "modelo": "Yaris",
+        "tipo": "Sedan",
+        "a\u00f1o": "2018",
+        "kilometraje": "85000",
+        "precio_compra": "64000",
+        "precio_venta": "65000",
+        "estado": "Disponible"
     }
 ]

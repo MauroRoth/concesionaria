@@ -18,20 +18,21 @@ class Controller:
 
     # opcion 1
     def agregar_vehiculo(self):
-        atributos_vehiculos = self.vista.agregar_vehiculo()
+        atributos_vehiculo = self.vista.agregar_vehiculo()
         nuevo_vehiculo = {
-                "id_vehiculo": atributos_vehiculos[0],
-                "patente": atributos_vehiculos[1],
-                "marca": atributos_vehiculos[2],
-                "modelo": atributos_vehiculos[3],
-                "tipo": atributos_vehiculos[4],
-                "año": atributos_vehiculos[5],
-                "kilometraje": atributos_vehiculos[6],
-                "precio_compra": atributos_vehiculos[7],
-                "precio_venta": atributos_vehiculos[8],
-                "estado": atributos_vehiculos[9]
+                "id_vehiculo": atributos_vehiculo[0],
+                "patente": atributos_vehiculo[1],
+                "marca": atributos_vehiculo[2],
+                "modelo": atributos_vehiculo[3],
+                "tipo": atributos_vehiculo[4],
+                "año": atributos_vehiculo[5],
+                "kilometraje": atributos_vehiculo[6],
+                "precio_compra": atributos_vehiculo[7],
+                "precio_venta": atributos_vehiculo[8],
+                "estado": atributos_vehiculo[9]
         }
         self.vehiculos.agregar_vehiculo(nuevo_vehiculo)
+        self.vista.mostrar_agregado(nuevo_vehiculo,'Vehículo')
 
     # opcion 2
     def mostrar_vehiculos(self):
@@ -41,12 +42,22 @@ class Controller:
         self.vista.mostrar(lista_de_vehiculos,singular,plural)
 
     # opcion 3
-    def editar_vehiculo(self):
-        print("Edito  Vehiculo")
-    
+    def editar_vehiculo(self): 
+        lista_de_vehiculos = self.vehiculos.mostrar_vehiculos()
+        id_vehiculo, atributo_a_modificar = self.vista.mostrar_editar_eliminar(lista_de_vehiculos,'editar','Vehículo')
+        atributo_modificado = self.vista.modificar_atributo(atributo_a_modificar)
+        self.vehiculos.editar_vehiculo(id_vehiculo,atributo_a_modificar,atributo_modificado)
+        lista_de_vehiculos = self.vehiculos.mostrar_vehiculos()
+        self.vista.mostrar_editar_eliminar(lista_de_vehiculos,'mostrar','Vehículo')
+
     # opcion 4 
     def eliminar_vehiculo(self):
-        print("Elimino Vehiculo")
+        lista_de_vehiculos = self.vehiculos.mostrar_vehiculos()
+        id_vehiculo = self.vista.mostrar_editar_eliminar(lista_de_vehiculos,'eliminar','Vehículos')
+        self.vehiculos.eliminar_vehiculo(id_vehiculo)
+        lista_de_vehiculos = self.vehiculos.mostrar_vehiculos()
+        self.vista.mostrar_editar_eliminar(lista_de_vehiculos,'mostrar','Vehículos')
+        
     
     # opcion 5
     def buscar_en_vehiculos(self):
@@ -61,7 +72,19 @@ class Controller:
     
     # opcion 6
     def agregar_cliente(self):
-        print("agrego cliente")
+        atributos_cliente = self.vista.agregar_cliente()
+        nuevo_cliente = {
+                "id_cliente": atributos_cliente[0],
+                "nombre": atributos_cliente[1],
+                "apellido": atributos_cliente[2],
+                "documento": atributos_cliente[3],
+                "direccion": atributos_cliente[4],
+                "telefono": atributos_cliente[5],
+                "correo_electronico": atributos_cliente[6],
+        }
+        self.clientes.agregar_cliente(nuevo_cliente)
+        self.vista.mostrar_agregado(nuevo_cliente,'Cliente')
+
 
     # opcion 7
     def mostrar_clientes(self):
@@ -71,12 +94,21 @@ class Controller:
         self.vista.mostrar(lista_de_clientes,singular,plural)
     
     # opcion 8
-    def editar_cliente(self):
-        print("edito un cliente")
+    def editar_cliente(self): 
+        lista_de_clientes = self.clientes.mostrar_clientes()
+        id_cliente, atributo_a_modificar = self.vista.mostrar_editar_eliminar(lista_de_clientes,'editar','Cliente')
+        atributo_modificado = self.vista.modificar_atributo(atributo_a_modificar)
+        self.clientes.editar_cliente(id_cliente,atributo_a_modificar,atributo_modificado)
+        lista_de_clientes = self.clientes.mostrar_clientes()
+        self.vista.mostrar_editar_eliminar(lista_de_clientes,'mostrar','Cliente')
 
     # opcion 9
     def eliminar_cliente(self):
-        print("elimino un cliente")
+        lista_de_clientes = self.clientes.mostrar_clientes()
+        id_cliente = self.vista.mostrar_editar_eliminar(lista_de_clientes,'eliminar','Clientes')
+        self.clientes.eliminar_cliente(id_cliente)
+        lista_de_clientes = self.clientes.mostrar_clientes()
+        self.vista.mostrar_editar_eliminar(lista_de_clientes,'mostrar','Clientes')
     
     # opcion 10
     def buscar_en_clientes(self):
