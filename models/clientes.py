@@ -73,9 +73,4 @@ nuevo_cliente = {
           "telefono": "123-4337",
           "correo_electronico": "jaoliva@example.com"
       }
-# cliente.agregar_cliente(nuevo_cliente)
-# cliente.mostrar_clientes()
-# #cliente.editar_cliente(2,'correo_electronico','beniijua@example.com')
-# cliente.eliminar_cliente(6)
-# cliente.mostrar_clientes()
-# # print(cliente.buscar_cliente('nombre','Benito'))
+

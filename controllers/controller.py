@@ -4,6 +4,8 @@ from models.transacciones import Transacciones
 
 from views.views import HomeView
 
+import re
+
 class Controller:
     def __init__(self):
         # models
@@ -173,3 +175,27 @@ class Controller:
         print(f"\n\t-->>{len(coincidencias)} resultado/s encontrado/s")
         self.vista.mostrar(coincidencias,singular,plural)
     
+    # opcion 16
+    def buscar_palabras(self):
+        palabra_buscada = self.vista.buscar_palabras()
+        lista_vehiculos = self.vehiculos.mostrar_vehiculos()
+        lista_clientes = self.clientes.mostrar_clientes()
+        lista_transacciones = self.transacciones.mostrar_transacciones()
+        
+        for cliente in lista_clientes:
+            for elemento in cliente.values():
+                elemento = str(elemento)
+                if re.findall(palabra_buscada,elemento):
+                    print(cliente)
+
+        for vehiculos in lista_vehiculos:
+            for elemento in vehiculos.values():
+                elemento = str(elemento)
+                if re.findall(palabra_buscada,elemento):
+                    print(vehiculos)
+
+        for transaccion in lista_transacciones:
+            for elemento in transaccion.values():
+                elemento = str(elemento)
+                if re.findall(palabra_buscada,elemento):
+                    print(transaccion)

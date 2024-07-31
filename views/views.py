@@ -38,6 +38,7 @@ class HomeView:
             print("\t\t13. Editar Transaccion")
             print("\t\t14. Eliminar Transaccion")
             print("\t\t15. Buscar en Trasacciones")
+            print("\t\t16. Buscar Palabras en Todo")
             print(50*"-")
             print("Presione 0 para salir...")
             print(50*"-")
@@ -60,6 +61,7 @@ class HomeView:
             elif opcion == '13': controller.editar_transaccion()
             elif opcion == '14': controller.eliminar_transaccion()
             elif opcion == '15': controller.buscar_en_transacciones()
+            elif opcion == '16': controller.buscar_palabras()
             else: break
 
             input('\nPresione una tecla para continuar... ')
@@ -155,5 +157,9 @@ class HomeView:
         criterio = input('Ingrese Criterio: ')
         buscado = input("Ingrese la palabra a buscar: ")
         return (criterio,buscado)
+    
+    def buscar_palabras(self):
+        palabra_buscada = input('Ingrese palabra a buscar: ')
+        return palabra_buscada
 
  
