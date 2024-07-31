@@ -1,4 +1,4 @@
-import os
+import os, re
 class HomeView:
     def __init__(self):
         pass
@@ -38,6 +38,7 @@ class HomeView:
             print("\t\t13. Editar Transaccion")
             print("\t\t14. Eliminar Transaccion")
             print("\t\t15. Buscar en Trasacciones")
+            print(50*'-')
             print("\t\t16. Buscar Palabras en Todo")
             print(50*"-")
             print("Presione 0 para salir...")
@@ -161,5 +162,30 @@ class HomeView:
     def buscar_palabras(self):
         palabra_buscada = input('Ingrese palabra a buscar: ')
         return palabra_buscada
+    
+    def mostrar_coincidencias(self,palabra_buscada,vehiculos,clientes,transacciones):
+        for vehiculo in vehiculos:
+            for elemento in vehiculo.values():
+                elemento = str(elemento)
+                if re.findall(palabra_buscada,elemento):
+                    for clave,valor in vehiculo.items():
+                        print(f"\t{clave}: {valor}")
+                    print(50*"-")
+
+        for cliente in clientes:
+            for elemento in cliente.values():
+                elemento = str(elemento)
+                if re.findall(palabra_buscada,elemento):
+                    for clave,valor in cliente.items():
+                        print(f"\t{clave}: {valor}")
+                    print(50*"-")
+
+        for transaccion in transacciones:
+            for elemento in transaccion.values():
+                elemento = str(elemento)
+                if re.findall(palabra_buscada,elemento):
+                    for clave,valor in transaccion.items():
+                        print(f"\t{clave}: {valor}")
+                    print(50*"-")
 
  

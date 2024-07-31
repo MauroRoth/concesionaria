@@ -243,15 +243,6 @@
         "correo_electronico": "jaoliva@example.com"
     },
     {
-        "id_cliente": 30,
-        "nombre": "Luis",
-        "apellido": "Mani",
-        "documento": "234556d3232",
-        "direccion": "Calle Franqueza",
-        "telefono": "123-4337",
-        "correo_electronico": "jaoliva@example.com"
-    },
-    {
         "id_cliente": 31,
         "nombre": "Luis",
         "apellido": "Mani",

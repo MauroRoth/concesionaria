@@ -130,5 +130,17 @@
         "precio_compra": 4000,
         "precio_venta": 5000,
         "estado": "Disponible"
+    },
+    {
+        "id_vehiculo": 15,
+        "patente": "ARY852",
+        "marca": "Ford",
+        "modelo": "Focus",
+        "tipo": "Sedan",
+        "a\u00f1o": 2021,
+        "kilometraje": 6500,
+        "precio_compra": 25000,
+        "precio_venta": 26000,
+        "estado": "Disponible"
     }
 ]

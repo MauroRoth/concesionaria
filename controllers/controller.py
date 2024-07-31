@@ -145,6 +145,9 @@ class Controller:
         plural = 'transacciones'
         lista_de_transacciones = self.transacciones.mostrar_transacciones()
         self.vista.mostrar(lista_de_transacciones,singular,plural)
+        # for transaccion in lista_de_transacciones:
+        #     if transaccion['tipo_transaccion']
+        #     print (transaccion['monto'])
     
     # opcion 13
     def editar_transaccion(self): 
@@ -181,21 +184,4 @@ class Controller:
         lista_vehiculos = self.vehiculos.mostrar_vehiculos()
         lista_clientes = self.clientes.mostrar_clientes()
         lista_transacciones = self.transacciones.mostrar_transacciones()
-        
-        for cliente in lista_clientes:
-            for elemento in cliente.values():
-                elemento = str(elemento)
-                if re.findall(palabra_buscada,elemento):
-                    print(cliente)
-
-        for vehiculos in lista_vehiculos:
-            for elemento in vehiculos.values():
-                elemento = str(elemento)
-                if re.findall(palabra_buscada,elemento):
-                    print(vehiculos)
-
-        for transaccion in lista_transacciones:
-            for elemento in transaccion.values():
-                elemento = str(elemento)
-                if re.findall(palabra_buscada,elemento):
-                    print(transaccion)
+        self.vista.mostrar_coincidencias(palabra_buscada,lista_vehiculos,lista_clientes,lista_transacciones)
